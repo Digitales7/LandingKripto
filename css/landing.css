@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{padding: 0}
+body{background: #fff;font-family: 'Roboto', sans-serif;font-size:16px;}
+.noPadding{padding: 0 !important}
+.noMargin{margin: 0 !important}
+.cabezaPrincipal{padding:5% 0 !important;background: url(../img/fondoCabeza.png) no-repeat 50% 50%;height: 100%;margin:auto;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;position: relative;}
+.logo{width: 100%}
+.anchoCompleto{width: 100%}
+.btn-negro{background: #000;color:#fff;padding:2% 5%;border-radius: 0 !important;font-size:2.0em;font-family: 'Myriad Pro BoldCond';margin:0 0 20px 0;}
+.btn-negro:hover{color:#000;background: #fff}
+.btn-negro.active{background: #fff;color: #000}
+.contBotonesCabeza{width: 100%;float:left;margin:20% 0 0 0;}
+.tituloQueEs{padding:170px  5%;color:#000 !important;}
+.tituloQueEs h4{font-size:2.0em;margin:0 !important;padding: 0 !important;font-family:'Myriad Pro Regular';}
+.tituloQueEs h2{font-size:3.0em;margin:0 !important;padding: 0 !important;font-family: 'Myriad Pro bold';}
+.tituloQueEs p{font-size:1.8em;margin:0 !important;padding: 0 !important;font-family: 'Myriad Pro Light';}
+.tituloQueEs ul li{font-size:1.8em;margin:0 !important;padding: 0 !important;font-family: 'Myriad Pro Light';list-style: none}
+.felchaAbajo{font-size: 2.5em;color:#000;}
+
+/*
+.txtOportunidadHeader{padding: 5% 0;color:#000;}
+.txtOportunidadHeader h1{font-size: 2.5em;font-family: 'Myriad Pro bold';}
+.txtOportunidadHeader ul {padding: 0 0 0 20px;margin:50px 0 0 0;}
+.txtOportunidadHeader ul li{list-style: none;margin:0 0 10px 0;}
+.cabezaPrincipal{background:#000;padding: 0 0 2% 0}
+.menuSuperior1 ul{margin:50px 0 0 0;}
+.menuSuperior1 ul li {display: inline;margin:0 15px 0 0;}
+.menuSuperior1 ul li a{color:#000;font-weight: bold;font-size:0.8em;}
+.logo img{width: 100%}
+.cuadro1{width: 100%;background: #fff;padding: 4% 6%}
+.cuadro2{width: 100%;background: #e5e5e4;padding: 4%;box-shadow: 0px 0px 9px #999}
+.tarjetaPresentacion{border:2px dashed #999 !important;padding: 3%;margin:0 0 5% 0;}
+.fotoPerfil img{width: 100%;border-radius: 100px}
+.datosPerfil{color:#000;}
+.datosPerfil h1{padding: 0 !important;font-weight: bold !important;margin: 0 0 5px 0 !important;font-family: 'Myriad Pro bold';font-size:3.0em !important;}
+.datosPerfil h4{margin: 0 0 5px 0 !important;}
+.datosPerfil h4 span{padding: 2px 5px !important;background: #FFB900;color:#000;}
+.subInfoInicial ul{ padding: 0 0 2% 0% }
+.subInfoInicial ul li{list-style: none}
+.subInfoInicial ul li a{font-size: 1.3em;color:#444;}
+.subInfoInicial ul li a:hover{color:#FCB800;text-decoration:none;}
+.parrafosInfo{font-size: 1.3em}
+.contaCajas{margin:0 0 5% 0;}
+.btn-recorrido{width: 100%;background: #000;color:#fff;padding:2% 5%;border-radius: 0 !important;font-size:2.0em;font-family: 'Myriad Pro BoldCond';}
+.btn-recorrido:hover{color:#FCB800;}
+.bulletPrincipal{font-size: 0.6em;color:#FFB900;}
+
+.tituloForm{font-family: 'Myriad Pro bold';margin:9px 0 35px 0 !important;width: 100%;font-size:2.3em;color:#000;}
+.cajasLanding{width: 100%;padding:6% 4% !important;border:0;border-radius: 0}
+.checkTxt{text-align: justify;}
+.btn-registra{width: 100%;background: #FCB800;color:#000;padding:2% 5%;border-radius: 0 !important;font-size:2.0em;font-family: 'Myriad Pro BoldCond';}
+.btn-registra:hover{color:#FCB800;background:#000;}
+.contPrimerCenter{padding: 2% 0 0 0}
+.tituloQueesKripto{font-family:'Myriad Pro Light';font-size:2.8em;color:#000;font-weight: 100}
+.tituloQueesKripto span{font-family: 'Myriad Pro bold';}
+.contPrimerCenter p{font-family:'Myriad Pro Light';color: #000;font-size: 1.8em;margin:0 0 80px 0;}
+.costado1{position: relative}
+.costado2 ul li{text-align:justify;font-size: 1.6em;font-family:'Myriad Pro Light';margin:0 0 30px 0;list-style: none}
+.costado2 ul li i{color:#FFB900;font-size: 0.8em}
+.btn-market{float:right;width: auto;background: #000;color:#fff;padding:2% 5%;border-radius: 0 !important;font-size:2.0em;font-family: 'Myriad Pro BoldCond';}
+.btn-market:hover{color:#FCB800;}
+.imgPage1{}
+.imgPage2{}
+.panelServicios{background: #FFB000;padding-left: 0 !important;color:#333;}
+.conServiciosAmarillo{}
+.tituloServiciosHome{color:#000;background: #fff;width: 80%;padding: 3% 3% 3% 150px;font-size: 2.8em;margin:10% 0 6% 0;}
+.tituloServiciosHome span{font-family: 'Myriad Pro bold';}
+.textoServiciosHome{width: 100%;padding-left:150px;color:#000;text-align: justify;padding-right: 150px;font-size: 1.2em;font-family:'Myriad Pro Regular';padding-bottom:10%;}
+.textoServiciosHome ul{margin:5% 0 0 0;}
+.textoServiciosHome ul li{list-style: none}
+.panelServiciosDos{background: url(../img/fondoServicios.jpg) no-repeat 50% 50%;height: 100%;margin:auto;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+.panelVentajas{padding:5% 8%;background: #fff }
+.contPestanas{}
+
+.btn-pest1{width: auto;background: #FFB000;color:#000;padding:1% 15%;border-radius: 0 !important;font-size:1.5em;font-family: 'Myriad Pro BoldCond';}
+.btn-pest1:hover{color:#fff;}
+
+.btn-pest2{width: auto;background: #000;color:#fff;padding:1% 15%;border-radius: 0 !important;font-size:1.5em;font-family: 'Myriad Pro BoldCond';}
+.btn-pest2:hover{color:#FCB800;}
+
+
+.tituloBenKripto{font-family:'Myriad Pro Light';font-size:2.8em;color:#000;font-weight: 100;margin:20px 0 50px 0;}
+.tituloBenKripto span{font-family: 'Myriad Pro bold';}
+.contPest{width: 100%;float:left}
+.txtBen{font-size: 1.6em;font-family:'Myriad Pro Light';padding:0 40% 0 0;}
+.tab-content{margin:7% 0 0 0;padding: 0 0 0 2%}
+.lineaFila{margin:0 0 2% 0;}
+.imgBen img{width: 80%}
+
+.contPrecio{background: #000;color:#fff;padding:5% 5% }
+.precio{font-size:10em;font-family: 'Myriad Pro bold';}
+
+.btn-registraPie{width: auto;background: #FCB800;color:#000;padding:1.5% 15%;border-radius: 0 !important;font-size:2.0em;font-family: 'Myriad Pro BoldCond';margin:2% 0 0 0;}
+.btn-registraPie:hover{color:#000;background:#fff;}
+.txtCuesta{background: #FFB000;color:#000;font-size:1.8em;padding: 0.8% 2%}
+.txtCuesta span{font-family: 'Myriad Pro bold';}
+.parrafoPrecio{font-size: 2.0em;font-family:'Myriad Pro Light';}
+
+@media only screen and (max-width:768px)
+{
+  
+}*/
