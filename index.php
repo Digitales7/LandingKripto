@@ -67,274 +67,86 @@
 			<a><i class="fa fa-chevron-down felchaAbajo"></i></a>
 		</div>
 	</div>
-	<!--panel 2-->
+	<!-- Panel 2 -->
 	<div class="container-fluid panelVentajas paneles" id="porquekriptomercado">
+		<div class="container contTenedor">
 			<div class="row">
 				<div class="col col-lg-12 col-md-12 contPestanas">
-					<div class="contPest text-left">
-						<a href="#1a" data-toggle="tab"  class="btn btn-pest2 horizon active" data-animate-in="preset:slideInDownShort;duration:1000ms;">¿POR QUÉ KRIPTOMERCADO?</a>
-						<a href="#3a" data-toggle="tab"  class="btn btn-pest2 horizon" data-animate-in="preset:slideInDownShort;duration:1000ms;">LA PLATAFORMA</a>
-						<a href="#2a" data-toggle="tab"  class="btn btn-pest2 horizon" data-animate-in="preset:slideInDownShort;duration:1000ms;">VENTAJAS</a>
+					<h2 class="tituloQueesKripto horizon" data-animate-in="preset:slideInDownShort;duration:1000ms;">Conóce las <span>tres razones</span>?</h2>
+					<p class="horizon textoTresRazones" data-animate-in="preset:slideInDownShort;duration:1500ms;">Para participar en la industria del comercio</p>
+					<div class="contPest text-center">
+						<a  data-toggle="tab"  class="btn btn-pest2 horizon active" data-animate-in="preset:slideInDownShort;duration:1000ms;" onclick="landing.grafico1()">CRECIMIENTO</a>
+						<a  data-toggle="tab"  onclick="landing.grafico2()"  class="btn btn-pest2 horizon" data-animate-in="preset:slideInDownShort;duration:1000ms;">VENTAS GLOBALES</a>
+						<a  data-toggle="tab"  onclick="landing.grafico3()" class="btn btn-pest2 horizon" data-animate-in="preset:slideInDownShort;duration:1000ms;">GRANDES MERCADOS</a>
 					</div>
-					<div class="tab-content clearfix">
-					  	<div class="tab-pane active" id="1a">
-		          			<h2 class="tituloBenKripto porqueKriptoTit horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;">¿Por qué <span>Kriptomercado</span>?</h2>
-
-		          			<div class="row">
-		          				<div class="col col-md-6 col-lg-6 horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;">
-		          					<div class="row lineaFila" >
-				          				<div class="col col-lg-3 col-md-3 imgBen">
-				          					<img src="<?php echo base_url('landingKripto/img/vendedor-especializado.png') ?>" width="100%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 txtBen">
-				          					Porque equivale a tener un vendedor especializado en la comercialización por internet.
-				          				</div>
-				          			</div>
-				          			<div class="row lineaFila" >
-				          				<div class="col col-lg-3 col-md-3 imgBen">
-				          					<img src="<?php echo base_url('landingKripto/img/tiempos-desarrollo.png') ?>" width="100%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 txtBen">
-				          					Porque cumple la función de manera inmediata sin tiempos en desarrollo ni costos de diseño y programación.
-				          				</div>
-				          			</div>
-				          			<div class="row lineaFila" >
-				          				<div class="col col-lg-3 col-md-3 imgBen">
-				          					<img src="<?php echo base_url('landingKripto/img/plan-marketing.png') ?>" width="100%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 txtBen">
-				          					Porque los comerciantes y profesionales se benefician del plan de marketing de la compañía para generar clientes.
-				          				</div>
-				          			</div>
-		          				</div>
-		          				<div class="col col-md-6 col-lg-6 horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;">
-				          			<div class="row lineaFila" >
-				          				<div class="col col-lg-3 col-md-3 imgBen">
-				          					<img src="<?php echo base_url('landingKripto/img/posicionamiento-en-google.png') ?>" width="100%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 txtBen">
-				          					Porque sus productos y servicios quedan posicionados en Google en poco tiempo.
-				          				</div>
-				          			</div>
-				          			<div class="row lineaFila" >
-				          				<div class="col col-lg-3 col-md-3 imgBen">
-				          					<img src="<?php echo base_url('landingKripto/img/clientes.png') ?>" width="100%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 txtBen">
-				          					Porque nos ocupamos de conseguir contactos, clientes y ventas por este canal y los entregamos a nuestros afiliados.
-				          				</div>
-				          			</div>
-				          			<div class="row lineaFila" >
-				          				<div class="col col-lg-3 col-md-3 imgBen">
-				          					<img src="<?php echo base_url('landingKripto/img/estadisticas.png') ?>" width="100%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 txtBen">
-				          					Porque ofrece un sistema de administración comercial, control, estadísticas y ventas.
-				          				</div>
-				          			</div>
-				          			<div class="row">
-				          				<div class="col col-lg-12 col-md-12">
-				          					<a href="#cuadro2" class="btn btn-registraPie horizon"  data-animate-in="preset:slideInDownShort;duration:1000ms;">HAGAMOS UNA CITA</a>	
-				          				</div>
-				          			</div>
-		          				</div>
-		          			</div>
+					<div class="row" id="graficos" >
+						<div class="col col-lg-6 col-md-6">
+							<div class="grafico" id="grafica"></div>	
 						</div>
-						<!-- Tab 2-->
-						<div class="tab-pane" id="2a">
-		          			<h2 class="tituloBenKripto ventajasKriptoTit horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;">Ventajas <span>Kriptomercado</span></h2>
-		          			<div class="row">
-		          				<div class="col col-md-4 col-lg-4 horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;">
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  Ahorro de costos en el desarrollo
-				          				</div>
-				          			</div>
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  Infraestructura profesional de alto impacto
-				          				</div>
-				          			</div>
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  Visibilidad de productos inmediata
-				          				</div>
-				          			</div>
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  Acceso a clientes desde la publicación
-				          				</div>
-				          			</div>
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  Cobertura del marketing de la compañía
-				          				</div>
-				          			</div>
-		          				</div>
-		          				<div class="col col-md-4 col-lg-4 horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;">
-
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  Vendedor especializado, otro canal de ventas
-				          				</div>
-				          			</div>
-
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  Libertad para aplicar descuentos y promociones 
-				          				</div>
-				          			</div>
-
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  Mostrar o esconder productos a voluntad
-				          				</div>
-				          			</div>
-
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  Logística de venta ya establecida
-				          				</div>
-				          			</div>
-
-		          				</div>
-
-
-		          				<div class="col col-md-4 col-lg-4 horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;">
-
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  Aumento en la capacidad de ventas
-				          				</div>
-				          			</div>
-
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  Integración inmediata con plataformas de pago
-				          				</div>
-				          			</div>
-
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  Sinergia con productos de otros vendedores 
-				          				</div>
-				          			</div>
-
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 imgBenVen">
-				          					<img src="<?php echo base_url('landingKripto/img/bullet.png') ?>" width="20%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 txtBen">
-				          					  El producto llegará a un número mayor de  clientes
-				          				</div>
-				          			</div>
-				          			<div class="row">
-				          				<div class="col col-lg-12 col-md-12">
-				          					<a href="#cuadro2" class="btn btn-registraPie horizon"  data-animate-in="preset:slideInDownShort;duration:1000ms;">HAGAMOS UNA CITA</a>	
-				          				</div>
-				          			</div>
-		          				</div>
-		          			</div>
+						<div class="col col-lg-6 col-md-6">
+							<p class="parrafoGraficos"></p>	
 						</div>
-						<!-- Tab 3-->
-						<div class="tab-pane" id="3a">
-		          			<h2 class="tituloBenKripto horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;">Nuestra <span>Plataforma</span></h2>
-		          			<p class="parrafoPlataforma horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;">Nuestra plataforma Online es tan robusta que tiene la capacidad de operar de acuerdo a cada necesidad comercial.</p>
-
-		          			<div class="row">
-		          				<div class="col col-md-6 col-lg-6 horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;">
-		          					
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 imgBen">
-				          					<img src="<?php echo base_url('landingKripto/img/tienda-online.png') ?>" width="100%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 txtBen">
-				          					Como una <strong>tienda online</strong> creada de manera inmediata para ofrecer todo tipo de productos y servicios, con sistema de pagos en línea.
-				          				</div>
-				          			</div>
-
-		          					<div class="row lineaFila">
-				          				<div class="col col-lg-3 col-md-3 imgBen">
-				          					<img src="<?php echo base_url('landingKripto/img/sistema-booking.png') ?>" width="100%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 txtBen">
-				          					 Como un <strong>sistema de reservas</strong> tipo Booking para hoteles el cuál se puede usar para: disponibilidad de habitaciones, espacios, lugares, horarios, etc.
-				          				</div>
-				          			</div>
-
-		          					
-		          				
-		          				</div>
-		          				<div class="col col-md-6 col-lg-6 horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;">
-		          						<div class="row lineaFila ">
-					          				<div class="col col-lg-3 col-md-3 imgBen">
-					          					<img src="<?php echo base_url('landingKripto/img/sistema-de-reservas.png') ?>" width="100%">
-					          				</div>
-					          				<div class="col col-lg-9 col-md-9 txtBen">
-					          					  Como un <strong>sistema de agendamiento</strong> de citas para profesionales enoficinas, consultorios, instituciones, centros de servicio, etc.
-					          				</div>
-					          			</div>
-
-		          					<div class="row lineaFila ">
-				          				<div class="col col-lg-3 col-md-3 imgBen">
-				          					<img src="<?php echo base_url('landingKripto/img/portafolio-servicios.png') ?>" width="100%">
-				          				</div>
-				          				<div class="col col-lg-9 col-md-9 txtBen">
-				          					   Como una <strong>web tipo portafolio</strong> de servicios; para conseguir contactos interesados en productos o servicios que no sean de venta directa en línea, tipo catálogo.
-				          				</div>
-				          			</div>
-				          			<div class="row">
-				          				<div class="col col-lg-12 col-md-12">
-				          					<a href="#cuadro2" class="btn btn-registraPie horizon"  data-animate-in="preset:slideInDownShort;duration:1000ms;">HAGAMOS UNA CITA</a>	
-				          				</div>
-				          			</div>
-		          				</div>
-		          			</div>
-						</div>
-					</div>
+					</div><!-- 
+					<div class="col col-lg-8 col-lg-8 horizon" id="graficos" data-animate-in="preset:slideInRightShort;duration:1000ms;">
+						<h2 class="titulosGraficos"></h2>
+						<div class="grafico" id="grafica"></div>
+						<p class="parrafoGraficos">
+							
+						</p>
+					</div> -->
 
 				</div>
 			</div>
 		</div>
+	</div>
+	<!-- Panel 3 -->
+	<div class="container-fluid noPadding bgPadding3">
+		<div class="container contTenedor">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <!-- <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			  </ol> -->
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+			      <?php include("plantillas/panel3/1.php"); ?>
+			    </div> 
+			    <div class="item">
+			      <!-- <?php include("plantillas/panel3/1.php"); ?> -->
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    </div>
+			    <!--
+			    <div class="item">
+			      <?php //include("plantillas/panel3/1.php"); ?>
+			    </div> -->
+
+			  </div>
+
+			  <!-- Left and right controls -->
+			  <a class="left carousel-control controlLeft1" href="#myCarousel" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control controlRight1" href="#myCarousel" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div>
+	</div>
 
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/landing.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
 </html>
